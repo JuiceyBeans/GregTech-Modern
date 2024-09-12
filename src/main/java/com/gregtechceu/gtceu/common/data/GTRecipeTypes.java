@@ -140,7 +140,7 @@ public class GTRecipeTypes {
             .setEUIO(IO.IN)
             .prepareBuilder(recipeBuilder -> recipeBuilder.duration(128).EUt(4))
             .setSlotOverlay(false, false, GuiTextures.BREWER_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, LEFT_TO_RIGHT)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_BREWING, LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.CHEMICAL);
 
     public final static GTRecipeType MACERATOR_RECIPES = register("macerator", ELECTRIC).setMaxIOSize(1, 4, 0, 0)
