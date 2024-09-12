@@ -153,6 +153,10 @@ public class GTRecipeType implements RecipeType<GTRecipe> {
         return this;
     }
 
+    /**
+     * @param progressBar Texture to use for progress bar; height to width ratio is 1:2 by default
+     * @param moveType Direction to show recipe progress
+     */
     public GTRecipeType setProgressBar(ResourceTexture progressBar, ProgressTexture.FillDirection moveType) {
         this.recipeUI.setProgressBar(progressBar, moveType);
         return this;
