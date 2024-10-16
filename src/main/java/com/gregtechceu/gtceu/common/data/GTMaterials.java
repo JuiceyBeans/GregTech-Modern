@@ -125,9 +125,11 @@ public class GTMaterials {
         ingot.setIgnored(Copper, Items.COPPER_INGOT);
         ingot.setIgnored(Brick, Items.BRICK);
         ingot.setIgnored(Wax, Items.HONEYCOMB);
+        ingot.setIgnored(Netherite, Items.NETHERITE_INGOT);
 
         nugget.setIgnored(Gold, Items.GOLD_NUGGET);
         nugget.setIgnored(Iron, Items.IRON_NUGGET);
+        nugget.setIgnored(Netherite);
 
         plate.setIgnored(Paper, Items.PAPER);
 
@@ -156,9 +158,13 @@ public class GTMaterials {
                 Blocks.PINK_CONCRETE, Blocks.GRAY_CONCRETE, Blocks.LIGHT_GRAY_CONCRETE, Blocks.CYAN_CONCRETE,
                 Blocks.PURPLE_CONCRETE, Blocks.BLUE_CONCRETE,
                 Blocks.BROWN_CONCRETE, Blocks.GREEN_CONCRETE, Blocks.RED_CONCRETE, Blocks.BLACK_CONCRETE);
+        block.setIgnored(Concrete, SupplierMemoizer.memoizeBlockSupplier(() -> GTBlocks.LIGHT_CONCRETE.get()));
+        block.setIgnored(Concrete, SupplierMemoizer.memoizeBlockSupplier(() -> GTBlocks.DARK_CONCRETE.get()));
         block.setIgnored(Blaze);
         block.setIgnored(Lapotron);
         block.setIgnored(Wax, Blocks.HONEYCOMB_BLOCK);
+        block.setIgnored(Sculk, Blocks.SCULK);
+        block.setIgnored(Netherite, Blocks.NETHERITE_BLOCK);
 
         rock.setIgnored(Marble, SupplierMemoizer.memoizeBlockSupplier(() -> GTBlocks.MARBLE.get()));
         rock.setIgnored(Granite, Blocks.GRANITE);
@@ -265,6 +271,8 @@ public class GTMaterials {
         block.modifyMaterialAmount(Obsidian, 1);
         block.modifyMaterialAmount(Sculk, 1);
         block.modifyMaterialAmount(Wax, 4);
+
+        //ore.setIgnored(Netherite, Blocks.ANCIENT_DEBRIS);
 
         rod.modifyMaterialAmount(Blaze, 4);
         rod.modifyMaterialAmount(Bone, 5);
@@ -951,6 +959,7 @@ public class GTMaterials {
     public static Material BrominatedChlorineVapor;
     public static Material AcidicBromineExhaust;
     public static Material Wax;
+    public static Material Netherite;
 
     /**
      * Third Degree Materials

@@ -547,5 +547,13 @@ public class SecondDegreeMaterials {
                 .color(0x8f681e)
                 .components(Steam, 3, Chlorine, 1)
                 .buildAndRegister();
+
+        Netherite = new Material.Builder(GTCEu.id("netherite"))
+                .ingot().dust().ore()
+                .color(0x51494c)//.secondaryColor(0x85600b)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION, EXCLUDE_BLOCK_CRAFTING_RECIPES,
+                        EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, NO_ORE_SMELTING, NO_ORE_PROCESSING_TAB)
+                .components(Gold, 4, RareEarth, 4)
+                .buildAndRegister();
     }
 }
