@@ -2599,6 +2599,7 @@ public class GTItems {
     public static ItemEntry<ComponentItem> MAGNETIC_GOLDEN_CARROT = REGISTRATE
             .item("magnetic_golden_carrot", ComponentItem::create)
             .lang("Magnetic Golden Carrot")
+            .setData(ProviderType.ITEM_MODEL, NonNullBiConsumer.noop())
             .onRegister(attach(new FoodStats(new FoodProperties.Builder()
                     .nutrition(Foods.GOLDEN_CARROT.getNutrition())
                     .saturationMod(Foods.GOLDEN_CARROT.getSaturationModifier())
